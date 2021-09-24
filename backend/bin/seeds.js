@@ -1,5 +1,5 @@
 // To insert in "bin/seeds.js"
-const Movie = require("../models/movies")
+const Movie = require("../models/movie")
 const mongoose = require("mongoose")
 
 mongoose
