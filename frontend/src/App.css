@@ -9,7 +9,7 @@ body {
 .App {
   width: 500px;
   margin: 0px auto;
-  padding: 50px 0;
+  padding: 50px;
   text-align: center;
   background-color: #fff;
   position: absolute;
@@ -20,7 +20,7 @@ body {
   border-radius: 20px;
 }
 
-button {
+.button {
   background-color: #fbd131;
   border: none;
   padding: 15px;
@@ -29,4 +29,9 @@ button {
 
 h1 {
   font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
