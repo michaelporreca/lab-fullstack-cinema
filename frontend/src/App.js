@@ -1,10 +1,13 @@
 import './App.css';
+import axios from 'axios'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import Movies from '../src/components/Movies'
+import Home from '../src/components/Home'
 
 function App() {
   return (
@@ -18,25 +21,6 @@ function App() {
       </Route>
     </Switch>
     </Router>
-  );
-}
-
-function Home() {
-  return (
-    <div className="App">
-      <Link to="/"><h1>Cinema Ironack</h1></Link>
-      <Link to="/movies" className="button">Check the movies</Link>
-    </div>
-  );
-}
-
-function Movies() {
-  return (
-    <div className="App">
-      <Link to="/"><h1>Cinema Ironack</h1></Link>
-      <Link to="/movies" className="button">Check the movies</Link>
-      <h2>Movies</h2>
-    </div>
   );
 }
 
