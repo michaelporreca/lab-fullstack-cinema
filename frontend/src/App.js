@@ -8,8 +8,14 @@ import {
 } from "react-router-dom";
 import Movies from '../src/components/Movies'
 import Home from '../src/components/Home'
+import { useState, useEffect } from 'react';
 
 function App() {
+
+  useEffect (async () => {
+    let res = await axios.get('http://localhost:5000/movie')
+  }, [])
+
   return (
     <Router>
     <Switch>

@@ -8,14 +8,10 @@ body {
 
 .App {
   width: 500px;
-  margin: 0px auto;
+  margin: 50px auto;
   padding: 50px;
   text-align: center;
   background-color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   border: 10px solid #000;
   border-radius: 20px;
 }
