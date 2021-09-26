@@ -14,7 +14,11 @@ function Movies(props) {
   const AllMovies = () => {
     return movies.map(eachMovie => {
       return (
-      <li><img src={eachMovie.image} /> {eachMovie.title}</li>
+      <div className="movie">
+        <img src={eachMovie.image} /><br></br>
+        {eachMovie.title}<br></br>
+        <br></br>
+      </div>
       )
     })
   }
@@ -24,7 +28,7 @@ function Movies(props) {
         <Link to="/"><h1>Cinema Ironack</h1></Link>
         <Link to="/movies" className="button">Check the movies</Link>
         <h2>Movies</h2>
-        <ul><AllMovies /></ul>.
+        <AllMovies />
       </div>
     );
   }
