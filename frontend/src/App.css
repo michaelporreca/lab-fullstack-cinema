@@ -34,3 +34,11 @@ a {
 
 .movie {
 }
+
+.movie a {
+  border-bottom: 3px solid #fbd131;
+}
+
+.movie a:hover {
+  border-bottom: 3px solid #000;
+}

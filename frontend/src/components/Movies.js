@@ -16,7 +16,10 @@ function Movies(props) {
       return (
       <div className="movie">
         <img src={eachMovie.image} /><br></br>
-        {eachMovie.title}<br></br>
+        <br></br>
+        <strong>{eachMovie.title}</strong><br></br>
+        <Link to="">See More</Link><br></br>
+        <br></br>
         <br></br>
       </div>
       )
