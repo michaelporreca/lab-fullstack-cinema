@@ -18,7 +18,7 @@ function Movies(props) {
         <img src={eachMovie.image} /><br></br>
         <br></br>
         <strong>{eachMovie.title}</strong><br></br>
-        <Link to={`/movie/${eachMovie.title}`}>See More</Link><br></br>
+        <Link to={`/movie/${eachMovie._id}`}>See More</Link><br></br>
         <br></br>
         <br></br>
       </div>
