@@ -4,11 +4,11 @@ import axios from 'axios'
 
 function Movies(props) {
 
-  const [movies, setMovie] = useState([])
+  const [movies, setMovies] = useState([])
 
   useEffect(async () => {
       let res = await axios.get(`http://localhost:5000/movie`)
-      setMovie(res.data)
+      setMovies(res.data)
   }, [])
 
   const AllMovies = () => {
@@ -18,7 +18,7 @@ function Movies(props) {
         <img src={eachMovie.image} /><br></br>
         <br></br>
         <strong>{eachMovie.title}</strong><br></br>
-        <Link to="">See More</Link><br></br>
+        <Link to={`/movie/${eachMovie.title}`}>See More</Link><br></br>
         <br></br>
         <br></br>
       </div>

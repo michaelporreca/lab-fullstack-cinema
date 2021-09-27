@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Movies from '../src/components/Movies'
 import Home from '../src/components/Home'
+import MovieDetail from './components/MovieDetail'
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -19,11 +20,14 @@ function App() {
   return (
     <Router>
     <Switch>
-    <Route path="/movies">
+      <Route exact path="/movies" component={Movies}>
         <Movies />
       </Route>
-      <Route path="/">
+      <Route exact path="/" component={Home}>
         <Home />
+      </Route>
+      <Route exact path="/movies/:movieId" component={MovieDetail}>
+        <MovieDetail />
       </Route>
     </Switch>
     </Router>
